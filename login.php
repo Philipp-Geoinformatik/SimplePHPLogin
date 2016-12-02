@@ -12,6 +12,9 @@ if(isset($_GET['login'])) {
      //Überprüfung des Passworts
      if ($user !== false && password_verify($passwort, $user['passwort'])) { 
          $_SESSION['userid'] = $user['id'];
+         $bool = true;
+        
+         
            // header("Location: geheim.php");
 
             //exit();
@@ -35,19 +38,31 @@ if(isset($errorMessage)) {
  echo $errorMessage;
 }
 ?>
+            <?php if ($bool): ?>
 
-            <form action="?login=1" method="post">
-                E-Mail:
-                <br>
-                <input type="email" size="40" maxlength="250" name="email">
-                <br>
-                <br> Dein Passwort:
-                <br>
-                <input type="password" size="40" maxlength="250" name="passwort">
-                <br>
+                <p>sdfsdfsdfsdfsdf</p>
+                <p>sdfsdfsdfsdfsdf</p>
+                <p>sdfsdfsdfsdfsdf</p>
+                <p>sdfsdfsdfsdfsdf</p>
 
-                <input type="submit" value="Abschicken">
-            </form>
+                <?php else: ?>
+
+                    <?php endif ?>
+
+
+
+                        <form action="?login=1" method="post">
+                            E-Mail:
+                            <br>
+                            <input type="email" size="40" maxlength="250" name="email">
+                            <br>
+                            <br> Dein Passwort:
+                            <br>
+                            <input type="password" size="40" maxlength="250" name="passwort">
+                            <br>
+
+                            <input type="submit" value="Abschicken">
+                        </form>
     </body>
 
     </html>
