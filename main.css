@@ -1,0 +1,31 @@
+.headline {}
+
+.airbus-logo {
+    max-width: 10%;
+}
+
+#adsLogoFullName {
+    width: 512px;
+}
+
+.full-width-img-wrapper {}
+
+.login-panel {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #AAA;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#show-login {
+    position: absolute;
+    /* added */
+    bottom: 0;
+    /* added */
+    left: 0;
+}
